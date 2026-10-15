@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="robots" content="noindex">
+  <title>Painel Administrativo — Legado Barber</title>
+  <link rel="icon" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body" data-page="admin" data-root="../">
+  <div class="admin">
+    <aside class="sidebar" aria-label="Menu do painel">
+      <div class="sb-brand">
+        <span class="logo-wrap"><img data-logo alt="Logo da Legado Barber" width="46" height="46"></span>
+        <div><strong>LEGADO</strong><small>Painel Administrativo</small></div>
+      </div>
+      <nav class="snav" id="adminNav" aria-label="Seções do painel"></nav>
+      <div class="sb-foot"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg> Acesso demonstrativo: não há autenticação real neste protótipo.</div>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-top">
+        <div><h1 id="adminTitle">Visão geral</h1><p class="muted" id="adminDate"></p></div>
+        <div class="admin-top-actions">
+          <span class="demo-tag">Dados demonstrativos</span>
+          <button type="button" class="btn btn-ghost btn-sm" data-action="restore-demo"><svg class="ic" aria-hidden="true"><use href="#i-refresh"/></svg> Restaurar dados</button>
+          <a class="btn btn-gold btn-sm" href="../index.html"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg> Ver o site</a>
+        </div>
+      </div>
+      <div id="adminContent"></div>
+    </main>
+  </div>
+
+  <script src="../js/icons.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

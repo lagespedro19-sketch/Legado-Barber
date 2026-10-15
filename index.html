@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Legado Barber — Mais que um corte, é um legado. Protótipo de agendamento online.">
+  <title>Legado Barber — Mais que um corte, é um legado</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home" data-root="">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div id="siteHeader"></div>
+
+  <main id="conteudo" class="view">
+    <!-- Apresentação -->
+    <section class="container hero">
+      <div class="hero-text">
+        <span class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-crown"/></svg> Agendamento online · Protótipo</span>
+        <h1>Mais que um corte, <em>é um legado.</em></h1>
+        <p class="lead">Reserve seu horário na Legado Barber em poucos passos: escolha o serviço e o melhor momento para você. Tradição, estilo e cuidado em cada detalhe.</p>
+        <div class="hero-cta">
+          <a class="btn btn-gold btn-lg" href="pages/agendar.html">Agendar horário</a>
+          <a class="btn btn-ghost btn-lg" href="pages/servicos.html">Ver serviços</a>
+        </div>
+        <ul class="hero-points" id="heroPoints"></ul>
+      </div>
+      <div class="hero-art">
+        <div class="ring ring-1"></div><div class="ring ring-2"></div>
+        <div class="logo-wrap"><img data-logo alt="Logo da Legado Barber" width="600" height="600"></div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Categorias: cada uma abre a página de serviços já filtrada -->
+    <section class="container section">
+      <div class="section-head">
+        <span class="kicker">Nossos serviços</span>
+        <h2>Escolha uma categoria</h2>
+        <p>Cortes, barba, combos e muito mais. Toque em uma categoria para ver os serviços e os preços.</p>
+      </div>
+      <div class="cat-tiles" id="catTiles"></div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Destaques -->
+    <section class="container section">
+      <div class="section-head"><span class="kicker">Mais procurados</span><h2>Serviços em destaque</h2></div>
+      <div class="grid-4" id="featured"></div>
+      <p style="margin-top:20px"><a class="btn btn-ghost" href="pages/servicos.html">Ver todos os serviços</a></p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Profissional -->
+    <section class="container section">
+      <div class="section-head"><span class="kicker">Profissional</span><h2>Quem atende você</h2></div>
+      <div id="homePro"></div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Como funciona -->
+    <section class="container section">
+      <div class="section-head"><span class="kicker">Simples e rápido</span><h2>Como funciona</h2></div>
+      <div class="steps-how">
+        <div class="card how"><span class="num">01</span><h3>Escolha o serviço</h3><p>Navegue pelas categorias ou busque pelo nome do serviço.</p></div>
+        <div class="card how"><span class="num">02</span><h3>Defina data e horário</h3><p>Veja só os horários livres, já considerando a duração do serviço.</p></div>
+        <div class="card how"><span class="num">03</span><h3>Informe seus dados</h3><p>Nome e telefone para registrar a sua reserva.</p></div>
+        <div class="card how"><span class="num">04</span><h3>Confirme</h3><p>Revise e receba o código da reserva. Consulte em “Meus agendamentos”.</p></div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="cta-band">
+        <div><h2>Pronto para o seu próximo corte?</h2><p>Leva menos de um minuto para reservar.</p></div>
+        <a class="btn btn-gold btn-lg" href="pages/agendar.html">Agendar horário</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="js/icons.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

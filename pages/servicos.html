@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>Serviços — Legado Barber</title>
+  <link rel="icon" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="servicos" data-root="../">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div id="siteHeader"></div>
+
+  <main id="conteudo" class="view">
+    <section class="container page-hero">
+      <nav class="breadcrumb" aria-label="Você está em"><a href="../index.html">Início</a> <span>/</span> <span>Serviços</span></nav>
+      <h1>Nossos serviços</h1>
+      <p>Escolha uma categoria para ver os serviços. Toque em <strong>Agendar</strong> para reservar na hora, ou use o <strong>+</strong> para juntar vários serviços na mesma reserva.</p>
+    </section>
+
+    <div class="container" style="padding-bottom:40px">
+      <div class="cat-tiles" id="catTiles" role="group" aria-label="Categorias"></div>
+
+      <div class="catalog-tools" style="margin-top:24px">
+        <label class="search grow">
+          <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
+          <input type="search" id="svcSearch" data-input="svc-search" placeholder="Buscar serviço pelo nome…" aria-label="Buscar serviço" autocomplete="off">
+        </label>
+      </div>
+      <p class="result-count" id="svcCount" aria-live="polite"></p>
+
+      <div id="svcList"></div>
+
+      <div class="select-bar" id="selectBar" hidden></div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="../js/icons.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/servicos.js"></script>
+</body>
+</html>

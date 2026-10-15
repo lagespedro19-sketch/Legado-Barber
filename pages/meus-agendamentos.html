@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>Meus agendamentos — Legado Barber</title>
+  <link rel="icon" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="meus" data-root="../">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div id="siteHeader"></div>
+
+  <main id="conteudo" class="view">
+    <div class="narrow mine-wrap">
+      <nav class="breadcrumb" aria-label="Você está em"><a href="../index.html">Início</a> <span>/</span> <span>Meus agendamentos</span></nav>
+      <div class="step-head">
+        <span class="kicker">Área do cliente</span>
+        <h2>Meus agendamentos</h2>
+        <p>Consulte suas reservas pelo telefone usado no agendamento ou pelo código da reserva (ex.: LB-XXXXX).</p>
+      </div>
+
+      <form id="mineForm" class="card mine-search" novalidate>
+        <label class="search">
+          <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
+          <input type="search" id="mineQuery" data-input="mine-query" placeholder="Telefone ou código da reserva" aria-label="Telefone ou código da reserva" autocomplete="off">
+        </label>
+        <button class="btn btn-gold" type="submit">Buscar</button>
+      </form>
+      <p class="muted" style="font-size:.82rem;margin-bottom:6px">
+        Quer só ver como funciona? <button type="button" class="link-btn" data-action="mine-demo">Usar telefone de exemplo (demonstrativo)</button>
+      </p>
+
+      <div id="mineResults"></div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+
+  <script src="../js/icons.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/ui.js"></script>
+  <script src="../js/meus.js"></script>
+</body>
+</html>

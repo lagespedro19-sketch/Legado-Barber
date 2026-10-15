@@ -1,0 +1,30 @@
+LEGADO BARBER — protótipo de agendamento (HTML + CSS + JavaScript puros)
+
+COMO ABRIR
+1) Extraia a pasta "legado-barber" do .zip.
+2) Dê dois cliques em index.html  (ou, no VS Code: botão direito em index.html > Open with Live Server).
+   Não precisa de internet, instalação ou servidor.
+
+ESTRUTURA
+  index.html                    Página inicial
+  pages/servicos.html           Serviços por categoria (Cortes, Barba, Combos...)
+  pages/agendar.html            Agendamento em etapas
+  pages/meus-agendamentos.html  Consultar / cancelar reservas
+  pages/admin.html              Painel Administrativo (demonstrativo)
+  css/style.css                 Estilos do site (cores da marca no topo, em :root)
+  css/admin.css                 Estilos do painel
+  js/data.js                    Dados (21 serviços, Layslon), regras de horário e localStorage
+  js/ui.js                      Menu, rodapé, avisos e janelas
+  js/icons.js                   Ícones
+  js/home.js, servicos.js, agendar.js, meus.js, admin.js   Um script por página
+  img/logo.png                  Logo da Legado Barber
+
+O QUE EDITAR
+- Serviços, preços, durações e horário de funcionamento: pelo próprio Painel Administrativo.
+- Valores iniciais (restaurados pelo botão "Restaurar dados"): js/data.js.
+- Cores: css/style.css, bloco :root no topo.
+
+IMPORTANTE
+- Os dados ficam só no navegador (localStorage) e não sincronizam entre aparelhos.
+- A proteção contra horários duplicados é demonstrativa; uma versão real precisa de backend.
+- Não há pagamento, notificações ou login real. Clientes e valores do painel são fictícios.
